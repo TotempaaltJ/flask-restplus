@@ -41,7 +41,7 @@ You need to install some dependencies to develop on flask-restplus:
 
 .. code-block:: console
 
-    $ pip install -e .[dev]
+    $ pipenv --three install --dev
 
 An Invoke ``tasks.py`` is provided to simplify the common tasks:
 
