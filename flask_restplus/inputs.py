@@ -407,7 +407,7 @@ def iso8601interval(value, argument='argument'):
 
         start, end = _normalize_interval(start, end, value)
 
-    except ValueError:
+    except (ValueError, IndexError):
         msg = 'Invalid {arg}: {value}. {arg} must be a valid ISO8601 date/time interval.'
         raise ValueError(msg.format(arg=argument, value=value),)
 
